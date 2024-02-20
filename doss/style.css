@@ -1,0 +1,87 @@
+@font-face {
+    font-family: joseRugular;
+    src: url('./JosefinSans-Regular.ttf');
+}
+*{
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+    font-family: joseRugular;
+}
+/* body{
+    padding: 100px;
+} */
+h1{
+    font-size: 66px;
+    text-align: center;
+    height: 70px;
+    background: #F0F3FF;
+    padding-top: 40px;
+}
+.container{
+    padding: 60px;
+    background: #F0F3FF;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+a{text-decoration: none; display: block; width: 33%;}
+.card{
+    /* width:420px; */
+    height: 130px;
+    padding: 0px 16px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+.card img{width: 50px;}
+.card h2{
+    width: 80%; 
+    font-size: 36px;
+    color: #070F2B;
+}
+
+@media screen and (max-width:480px){
+    body{background: #F0F3FF;}
+    h1{
+        font-size: 32px;
+    }
+    .container{
+        padding: 10px;
+        /* height: calc(100vh - 70px); */
+    }
+    a{width: 100%;}
+    .card{
+        /* width:350px; */
+        height: 100px;
+    }
+    .card img{width: 40px;}
+    .card h2{
+        width: 80%; 
+        font-size: 28px;
+    }
+}
+@media screen and (max-width:1000px) and (min-width:481px){
+    body{background: #F0F3FF;}
+    h1{
+        font-size: 36px;
+    }
+    .container{
+        padding: 10px;
+        /* height: calc(100vh - 70px); */
+    }
+
+    a{
+        width:49%;
+    }
+    .card img{width: 40px;}
+    .card h2{
+        width: 80%; 
+        font-size: 28px;
+    }
+}
